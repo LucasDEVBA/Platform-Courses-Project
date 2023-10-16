@@ -93,7 +93,7 @@ const AttachmentForm = ({ initialData, courseId }: AttachmentFormProps) => {
                       className="ml-auto hover:opacity-75 transition"
                       onClick={() => onDelete(att.id)}
                     >
-                      <X className="h-4 w-4 animate-spin" />
+                      <X className="h-4 w-4" />
                     </button>
                   )}
                 </div>
