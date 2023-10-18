@@ -49,28 +49,28 @@ const getChapter = async ({ userId, courseId, chapterId }: GetChapterProps) => {
           courseId,
         },
       });
+    }
 
-      if (chapter.isFree || purchase) {
-        muxData = await db.muxData.findUnique({
-          where: {
-            chapterId: chapterId,
-          },
-        });
-      }
-
-      nextChapter = await db.chapter.findFirst({
+    if (chapter.isFree || purchase) {
+      muxData = await db.muxData.findUnique({
         where: {
-          courseId: courseId,
-          isPublished: true,
-          position: {
-            gt: chapter?.position,
-          },
-        },
-        orderBy: {
-          position: "asc",
+          chapterId: chapterId,
         },
       });
     }
+
+    nextChapter = await db.chapter.findFirst({
+      where: {
+        courseId: courseId,
+        isPublished: true,
+        position: {
+          gt: chapter?.position,
+        },
+      },
+      orderBy: {
+        position: "asc",
+      },
+    });
 
     const userProgress = await db.userProgress.findUnique({
       where: {
