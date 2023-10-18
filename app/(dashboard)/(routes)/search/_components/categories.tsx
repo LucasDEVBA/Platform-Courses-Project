@@ -19,13 +19,13 @@ interface CategoriesProps {
 }
 
 const iconMap: Record<Category["name"], IconType> = {
-  Music: FcMusic,
-  Photography: FcOldTimeCamera,
+  Musica: FcMusic,
+  Fotografia: FcOldTimeCamera,
   Fitness: FcSportsMode,
-  Accounting: FcSalesPerformance,
-  "Computer Science": FcMultipleDevices,
-  Filming: FcFilmReel,
-  Engineering: FcEngineering,
+  Contabilidade: FcSalesPerformance,
+  "Ciencia da Computacao": FcMultipleDevices,
+  Filmagen: FcFilmReel,
+  Engenharia: FcEngineering,
 };
 
 const Categories = ({ items }: CategoriesProps) => {
