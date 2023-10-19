@@ -76,7 +76,7 @@ model Chapter {
 }
 
 model MuxData {
-  id         String  @default(uuid())
+  id         String  @id @default(uuid())
   assetId    String
   playbackId String?
 
@@ -85,7 +85,7 @@ model MuxData {
 }
 
 model UserProgress {
-  id     String @default(uuid())
+  id     String @id @default(uuid())
   userId String
 
   chapterId String
@@ -108,7 +108,7 @@ model Purchase {
   course   Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt()
 
   @@unique([userId, courseId])
   @@index([courseId])
