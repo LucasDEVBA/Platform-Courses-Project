@@ -4,12 +4,12 @@ import { IconBadge } from "@/components/icon-badge";
 
 interface InfoCardProps {
   numberOfItems: number;
-  variant?: "deafault" | "success";
+  variant?: "default" | "success";
   label: string;
   icon: LucideIcon;
 }
 
-const InfoCard = ({
+export const InfoCard = ({
   variant,
   icon: Icon,
   numberOfItems,
@@ -21,11 +21,10 @@ const InfoCard = ({
       <div>
         <p className="font-medium">{label}</p>
         <p className="text-gray-500 text-sm">
-          {numberOfItems} {numberOfItems === 1 ? "Curso" : "Cursos"}
+          {numberOfItems} {numberOfItems === 1 ? "Course" : "Courses"}
         </p>
       </div>
     </div>
   );
 };
-
 export default InfoCard;
