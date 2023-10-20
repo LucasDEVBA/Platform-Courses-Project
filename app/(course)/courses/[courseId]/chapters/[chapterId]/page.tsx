@@ -1,6 +1,6 @@
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import { File } from "lucide-react";
+import { ArrowLeft, File } from "lucide-react";
 
 import Banner from "@/components/banner";
 import { Separator } from "@/components/ui/separator";
@@ -10,6 +10,7 @@ import VideoPlayer from "./_components/video-player";
 import CourseEnrollButton from "./_components/course-enroll-button";
 import CourseProgressButton from "./_components/course-progress-button";
 import { getChapter } from "@/actions/get-chapter";
+import Link from "next/link";
 
 const ChapterIdPage = async ({
   params,
@@ -51,6 +52,14 @@ const ChapterIdPage = async ({
         />
       )}
       <div className="flex flex-col max-w-4xl mx-auto pb-20">
+        <Link
+          href={`/search`}
+          className="flex items-center text-sm hover:opacity-75 transition mb-5 pt-4"
+        >
+          <ArrowLeft className="h-4 w-4 mr-2 ml-2" />
+          Voltar para Lista de cursos
+        </Link>
+
         <div className="p-4">
           <VideoPlayer
             chapterId={params.chapterId}
