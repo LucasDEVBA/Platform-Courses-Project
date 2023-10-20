@@ -57,7 +57,7 @@ const ChapterIdPage = async ({
           className="flex items-center text-sm hover:opacity-75 transition mb-5 pt-4"
         >
           <ArrowLeft className="h-4 w-4 mr-2 ml-2" />
-          Voltar para Lista de cursos
+          <span className=" font-semibold">Voltar para Lista de cursos</span>
         </Link>
 
         <div className="p-4">
