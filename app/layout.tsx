@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider localization={ptBR}>
-      <html lang="en">
+      <html lang="pt-BR">
         <body className={inter.className}>
           <ConfettiProvider />
           <ToastProvider />

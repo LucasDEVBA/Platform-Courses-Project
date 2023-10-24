@@ -90,10 +90,10 @@ const ChaptersForm = ({ initialData, courseId }: ChaptersFormProps) => {
         </div>
       )}
       <div className="font-medium flex items-center justify-between">
-        Course Capítulos
+        Capítulos do curso
         <Button onClick={toogleCeating} variant={"ghost"}>
           {isCreating ? (
-            <>Cancel</>
+            <>Cancelar</>
           ) : (
             <>
               <PlusCircle className="h-4 w-4 mr-2" />

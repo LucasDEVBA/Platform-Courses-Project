@@ -69,7 +69,7 @@ const ChapterTitleForm = ({
         Título do capítulo
         <Button onClick={toggleEdit} variant={"ghost"}>
           {isEditing ? (
-            <>Cancel</>
+            <>Cancelar</>
           ) : (
             <>
               <Pencil className="h-4 w-4 mr-2" />

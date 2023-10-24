@@ -53,7 +53,7 @@ const ChapterVideoForm = ({
       <div className="font-medium flex items-center justify-between">
         Vídeo do capítulo
         <Button onClick={toggleEdit} variant={"ghost"}>
-          {isEditing && <>Cancel</>}
+          {isEditing && <>Cancelar</>}
           {!isEditing && !initialData.videoUrl && (
             <>
               <PlusCircle className="h-4 w-4 mr-2" />
