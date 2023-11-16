@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Link do projeto: https://platform-courses-project.vercel.app/
 
-## Getting Started
+NextCursos - Plataforma de 
 
-First, run the development server:
+Bem-vindo ao repositório oficial do NextCursos, uma plataforma de cursos abrangente que oferece uma experiência completa para usuários, combinando uma área do cliente para consumir cursos e uma seção de criação e gestão de cursos. Desenvolvido com as tecnologias mais recentes, o NextCursos destaca-se pela sua autenticação eficiente fornecida pelo CLERK, integração segura de pagamentos com o Stripe e uma construção robusta de frontend e backend utilizando o poderoso framework Next.js. Além disso, o design é aprimorado com o uso das bibliotecas Tailwind e Shadcn/ui, proporcionando uma experiência visual atraente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Recursos Principais
+Autenticação com CLERK
+O processo de registro é simplificado e seguro, com autenticação fornecida pelo CLERK, garantindo a integridade das contas dos usuários.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Área do Cliente
+Uma interface dedicada proporciona aos clientes uma experiência personalizada para consumir cursos, acompanhando o progresso e acessando conteúdo exclusivo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Criação e Gestão de Cursos
+Instrutores e administradores têm uma plataforma especializada para criar cursos, gerenciar inscrições e analisar o desempenho, proporcionando uma gestão eficiente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Integração de Pagamento com Stripe
+A segurança nas transações é prioridade, com a integração suave do Stripe, permitindo pagamentos confiáveis e sem complicações.
 
-## Learn More
+Frontend e Backend com Next.js
+A robustez do projeto é garantida pela escolha estratégica do Next.js, proporcionando uma arquitetura sólida para o frontend e backend.
 
-To learn more about Next.js, take a look at the following resources:
+Tecnologias Utilizadas
+Frontend e Backend: Next.js
+Banco de Dados: PostgreSQL
+Autenticação: CLERK
+Integração de Pagamento: Stripe
+Bibliotecas de Design: Tailwind, Shadcn/ui
+Como Contribuir
+Se você está interessado em contribuir para o NextCursos, siga estas etapas:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Faça um fork do repositório
+Crie uma branch para sua contribuição: git checkout -b feature/sua-feature
+Faça suas alterações e commit: git commit -m 'Adiciona nova feature'
+Faça push para sua branch: git push origin feature/sua-feature
+Abra um pull request para revisão
+Estamos ansiosos para receber suas contribuições!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Licença
+Este projeto está licenciado sob a Licença MIT, o que significa que você é livre para usá-lo da maneira que preferir. Estamos ansiosos para ver como você pode melhorar o NextCursos!
