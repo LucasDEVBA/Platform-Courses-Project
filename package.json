@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "stripe-listen": "stripe listen --forward-to localhost:3000/api/webhook",
-    "postinstall": "prisma generate"
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@clerk/localizations": "^1.26.6",
